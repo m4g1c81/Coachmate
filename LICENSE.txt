@@ -1,0 +1,11 @@
+SpeseCasa
+Copyright (c) 2026 Marco. Tutti i diritti riservati.
+
+Questo software e il relativo codice sono di proprietà esclusiva di Marco.
+Nessuna parte può essere copiata, modificata, distribuita, pubblicata o
+utilizzata a fini commerciali senza autorizzazione scritta del proprietario.
+Il fatto che il codice sia visibile pubblicamente non costituisce concessione
+di alcuna licenza d'uso.
+
+All rights reserved. The code is publicly viewable but no license is granted
+to copy, modify, distribute or use it without the owner's written permission.
