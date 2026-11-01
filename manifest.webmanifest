@@ -1,0 +1,19 @@
+{
+  "name": "CoachMate Volleyball",
+  "short_name": "CoachMate",
+  "description": "Rotazioni, segnapunti, statistiche e gestione squadra per la pallavolo amatoriale.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A173D",
+  "theme_color": "#0A173D",
+  "lang": "it",
+  "categories": ["sports", "productivity"],
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
