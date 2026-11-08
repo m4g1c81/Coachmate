@@ -1,9 +1,10 @@
 /*! CoachMate Volleyball — © 2026 Marco. Tutti i diritti riservati.
  *  È vietata la copia, la modifica e la distribuzione, anche parziale, senza autorizzazione scritta dell'autore. */
 /* CoachMate – service worker: l'app funziona anche senza connessione */
-const CACHE = 'coachmate-v24';
-const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=24', './app.min.js?v=24',
-  './img/icon-180.png', './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png', './img/splash.jpg'];
+const CACHE = 'coachmate-v26';
+const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=26', './app.min.js?v=26',
+  './img/icon-180.png', './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png', './img/splash.jpg',
+  './vendor/three.module.min.js', './vendor/OrbitControls.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
