@@ -1,8 +1,8 @@
 /*! CoachMate Volleyball — © 2026 Marco. Tutti i diritti riservati.
  *  È vietata la copia, la modifica e la distribuzione, anche parziale, senza autorizzazione scritta dell'autore. */
 /* CoachMate – service worker: l'app funziona anche senza connessione */
-const CACHE = 'coachmate-v26';
-const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=26', './app.min.js?v=26',
+const CACHE = 'coachmate-v28';
+const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=28', './app.min.js?v=28',
   './img/icon-180.png', './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png', './img/splash.jpg',
   './vendor/three.module.min.js', './vendor/OrbitControls.js'];
 
@@ -15,6 +15,7 @@ self.addEventListener('activate', e => {
 // Rete prima (così gli aggiornamenti arrivano subito), cache se offline
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+  if (new URL(e.request.url).origin !== self.location.origin) return; // contatore visite e altri siti: direttamente in rete
   e.respondWith(
     // no-cache: chiede sempre al server se il file è cambiato (niente versioni vecchie)
     fetch(e.request.url, { cache: 'no-cache', credentials: 'same-origin' }).then(r => {
