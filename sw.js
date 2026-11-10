@@ -1,8 +1,8 @@
 /*! CoachMate Volleyball — © 2026 Marco. Tutti i diritti riservati.
  *  È vietata la copia, la modifica e la distribuzione, anche parziale, senza autorizzazione scritta dell'autore. */
 /* CoachMate – service worker: l'app funziona anche senza connessione */
-const CACHE = 'coachmate-v28';
-const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=28', './app.min.js?v=28',
+const CACHE = 'coachmate-v29';
+const FILES = ['./', './index.html', './manifest.webmanifest', './style.min.css?v=29', './app.min.js?v=29',
   './img/icon-180.png', './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png', './img/splash.jpg',
   './vendor/three.module.min.js', './vendor/OrbitControls.js'];
 
